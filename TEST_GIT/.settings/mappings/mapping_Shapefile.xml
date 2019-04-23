@@ -1,0 +1,156 @@
+<?xml version="1.0"?>
+<mapping>
+ <dbms product="SHAPEFILE" id="shapefile_id" label="Mapping Shapefile"
+  default="true">
+  <dbTypes>
+   <dbType type="CHARACTER" default="true" defaultLength="254" ignorePre="true"/>
+   <dbType type="DATE" ignoreLen="true" ignorePre="true" />
+   <dbType type="FLOATINGPOINT" ignoreLen="false" ignorePre="true" defaultLength="20" />
+   <dbType type="LOGICAL" ignoreLen="true" ignorePre="true" />
+   <dbType type="NUMBER" ignoreLen="false" ignorePre="false" defaultLength="16"  defaultPrecision="6"/>
+   <dbType type="POINT" ignoreLen="true" ignorePre="true" />
+   <dbType type="MULTIPOINT" ignoreLen="true" ignorePre="true" />
+   <dbType type="POLYLINE" ignoreLen="true" ignorePre="true" />
+   <dbType type="POLYGON" ignoreLen="true" ignorePre="true" />
+   <dbType type="POINT M" ignoreLen="true" ignorePre="true" />
+   <dbType type="MULTIPOINT M" ignoreLen="true" ignorePre="true" />
+   <dbType type="POLYLINE M" ignoreLen="true" ignorePre="true" />
+   <dbType type="POLYGON M" ignoreLen="true" ignorePre="true" />
+   <dbType type="POINT Z" ignoreLen="true" ignorePre="true" />
+   <dbType type="MULTIPOINT Z" ignoreLen="true" ignorePre="true" />
+   <dbType type="POLYLINE Z" ignoreLen="true" ignorePre="true" />
+   <dbType type="POLYGON Z" ignoreLen="true" ignorePre="true" />
+  </dbTypes>
+
+  <language name="java">
+
+   <talendToDbTypes><!-- Adviced mappings  -->
+    <talendType type="id_List"/>
+    <talendType type="id_Boolean"> 
+     <dbType type="LOGICAL" default="true" />
+    </talendType>
+    <talendType type="id_Byte">
+    </talendType>
+    <talendType type="id_byte[]">
+    </talendType>
+    <talendType type="id_Character">
+     <dbType type="CHARACTER" default="true" />
+    </talendType>
+    <talendType type="id_Date">
+     <dbType type="DATE" default="true" />
+    </talendType>
+    <talendType type="id_BigDecimal">
+     <dbType type="NUMBER"  default="true" /> 
+     <dbType type="FLOATINGPOINT" />
+    </talendType>
+    <talendType type="id_Double">
+     <dbType type="NUMBER"  default="true" />
+     <dbType type="FLOATINGPOINT" />
+    </talendType>
+    <talendType type="id_Float">
+     <dbType type="NUMBER"  default="true" />
+     <dbType type="FLOATINGPOINT" />
+    </talendType>
+    <talendType type="id_Integer">
+     <dbType type="NUMBER"  default="true" />
+     <dbType type="FLOATINGPOINT" />
+    </talendType>
+    <talendType type="id_Integer">
+     <dbType type="NUMBER"  default="true" />
+     <dbType type="FLOATINGPOINT" />
+    </talendType>
+    <talendType type="id_Long">
+     <dbType type="NUMBER"  default="true" />
+     <dbType type="FLOATINGPOINT" />
+    </talendType>
+    <talendType type="id_Object">
+    </talendType>
+    <talendType type="id_Short">
+     <dbType type="NUMBER"  default="true" />
+     <dbType type="FLOATINGPOINT" />
+    </talendType>
+    <talendType type="id_String">
+     <dbType type="CHARACTER" default="true" />
+    </talendType>
+    <talendType type="id_DGeometry" >
+     <dbType type="POINT" />
+     <dbType type="MULTIPOINT" />
+     <dbType type="POLYLINE" />
+     <dbType type="POLYGON" default="true" />
+     <dbType type="POINT M" />
+     <dbType type="MULTIPOINT M" />
+     <dbType type="POLYLINE M" />
+     <dbType type="POLYGON M" />
+     <dbType type="POINT Z" />
+     <dbType type="MULTIPOINT Z" />
+     <dbType type="POLYLINE Z" />
+     <dbType type="POLYGON Z" />
+    </talendType>
+   </talendToDbTypes>
+   
+   <dbToTalendTypes>
+    <dbType type="CHARACTER">
+     <talendType type="id_String" default="true" />
+    </dbType>
+    <dbType type="DATE">
+     <talendType type="id_Date" default="true" />
+    </dbType>
+    <dbType type="FLOATINGPOINT">
+     <talendType type="id_Float" default="true" />
+     <talendType type="id_BigDecimal"/>
+     <talendType type="id_Double"/>
+    </dbType>
+    <dbType type="LOGICAL">
+     <talendType type="id_Boolean" default="true" />
+    </dbType>
+    <dbType type="NUMBER">
+     <talendType type="id_BigDecimal" default="true" />
+     <talendType type="id_Double" />
+     <talendType type="id_Float" />
+     <talendType type="id_Long" />
+     <talendType type="id_Integer" />
+     <talendType type="id_Short" />
+    </dbType>
+    <dbType type="POINT">
+     <talendType type="id_DGeometry" default="true" />
+    </dbType>
+    <dbType type="MULTIPOINT">
+     <talendType type="id_DGeometry" default="true" />
+    </dbType>
+    <dbType type="POLYLINE">
+     <talendType type="id_DGeometry" default="true" />
+    </dbType>
+    <dbType type="POLYGON">
+     <talendType type="id_DGeometry" default="true" />
+    </dbType>
+    <dbType type="POINT M">
+     <talendType type="id_DGeometry" default="true" />
+    </dbType>
+    <dbType type="MULTIPOINT M">
+     <talendType type="id_DGeometry" default="true" />
+    </dbType>
+    <dbType type="POLYLINE M">
+     <talendType type="id_DGeometry" default="true" />
+    </dbType>
+    <dbType type="POLYGON M">
+     <talendType type="id_DGeometry" default="true" />
+    </dbType>
+    <dbType type="POINT Z">
+     <talendType type="id_DGeometry" default="true" />
+    </dbType>
+    <dbType type="MULTIPOINT Z">
+     <talendType type="id_DGeometry" default="true" />
+    </dbType>
+    <dbType type="POLYLINE Z">
+     <talendType type="id_DGeometry" default="true" />
+    </dbType>
+    <dbType type="POLYGON Z">
+     <talendType type="id_DGeometry" default="true" />
+    </dbType>
+
+   </dbToTalendTypes>
+  </language>
+
+ </dbms>
+
+</mapping>
