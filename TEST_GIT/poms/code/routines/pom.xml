@@ -133,13 +133,13 @@
     </dependency>
     <dependency>
       <groupId>net.disy.talend.spatial.libraries</groupId>
-      <artifactId>jgridshift</artifactId>
-      <version>1.0</version>
+      <artifactId>xml-apis</artifactId>
+      <version>1.0.b2</version>
     </dependency>
     <dependency>
       <groupId>net.disy.talend.spatial.libraries</groupId>
-      <artifactId>xml-apis</artifactId>
-      <version>1.0.b2</version>
+      <artifactId>jgridshift</artifactId>
+      <version>1.0</version>
     </dependency>
     <dependency>
       <groupId>net.disy.talend.spatial.libraries</groupId>
